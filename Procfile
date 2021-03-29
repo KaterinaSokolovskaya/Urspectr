@@ -1,1 +1,1 @@
-web: sh target/webapp
+web: java -war target/urspectr-0.0.1-SNAPSHOT.pom
