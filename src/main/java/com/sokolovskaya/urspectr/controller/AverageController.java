@@ -26,7 +26,7 @@ public class AverageController {
         return "index";
     }
 
-    @PostMapping("/average")
+    @PostMapping("/index")
     public
     String fileUpload(Model model, @RequestParam("file") MultipartFile file) throws IOException {
 
