@@ -23,7 +23,7 @@ public class AverageController {
     @GetMapping("/index")
     public String getPage(Model model) {
         model.addAttribute("average");
-        return "average";
+        return "index";
     }
 
     @PostMapping("/average")
