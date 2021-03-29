@@ -20,7 +20,7 @@ public class AverageController {
     private final ConvertService convertService;
     private final AverageService averageService;
 
-    @GetMapping("/")
+    @GetMapping("/index")
     public String getPage(Model model) {
         model.addAttribute("average");
         return "average";
