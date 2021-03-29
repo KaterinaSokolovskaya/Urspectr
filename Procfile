@@ -1,1 +1,1 @@
-web: java -war target/urspectr-0.0.1-SNAPSHOT.pom
+web: java -jar target/urspectr-0.0.1-SNAPSHOT.war
