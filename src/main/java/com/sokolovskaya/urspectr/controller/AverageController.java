@@ -20,10 +20,10 @@ public class AverageController {
     private final ConvertService convertService;
     private final AverageService averageService;
 
-    @GetMapping("/index")
+    @GetMapping("/average")
     public String getPage(Model model) {
         model.addAttribute("average");
-        return "index";
+        return "average";
     }
 
     @PostMapping("/average")
@@ -35,6 +35,6 @@ public class AverageController {
 
         ConvertService.deleteAllFiles("tmp/");
 
-        return "index";
+        return "average";
     }
 }
