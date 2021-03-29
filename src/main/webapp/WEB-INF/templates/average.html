@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Average</title>
+</head>
+<body>
+
+:)
+<div>
+    <h3>Расчет среднего количества документов в подсказках:</h3>
+    <form method="POST" action="average" enctype="multipart/form-data">
+        Загрузите файл формата zip или json:
+        <br>
+        <input type="file" name="file">
+        <br>
+        <br>
+        <input type="submit" value="Подсчет">
+        <br>
+        Нажмите здесь чтобы произвести подсчет!
+    </form>
+</div>
+<br>
+<br>
+<br>
+<div>
+    <h6>Одна подсказка в среднем содержит документов:</h6>
+    <h5 th:text="${average}"> </h5>
+</div>
+
+</body>
+</html>

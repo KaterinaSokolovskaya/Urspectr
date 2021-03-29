@@ -1,0 +1,17 @@
+package com.sokolovskaya.urspectr.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class BackspinCollection {
+
+    private List<Backspin> backspins;
+}
