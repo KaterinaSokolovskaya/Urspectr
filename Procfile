@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar target/urspectr-0.0.1-SNAPSHOT.war -Dserver.port=$PORT $JAR_OPTS
+web: java $JAVA_OPTS -Dserver.port=$PORT -jar target/urspectr-0.0.1-SNAPSHOT.war
