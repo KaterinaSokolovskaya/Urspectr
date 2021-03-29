@@ -35,6 +35,6 @@ public class AverageController {
 
         ConvertService.deleteAllFiles("tmp/");
 
-        return "average";
+        return "index";
     }
 }
