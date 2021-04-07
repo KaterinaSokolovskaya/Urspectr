@@ -51,7 +51,7 @@ public class AverageController {
     void fileDownload(@RequestParam("file") MultipartFile file, HttpServletResponse response) throws IOException {
 
         Path downloadFile = Paths.get(uniqueDocsService.getUniqueDocuments(convertService.convertToBackspinCollection(file)).getAbsolutePath());
-        response.setHeader("Content-disposition", "attachment;filename=" + "tmp/unidoc.csv");
+        response.setHeader("Content-disposition", "attachment;filename=" + "unidoc.csv");
         response.setContentType("application/csv");
 
         Files.copy(downloadFile, response.getOutputStream());
