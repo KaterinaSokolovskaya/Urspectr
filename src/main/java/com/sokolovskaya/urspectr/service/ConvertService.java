@@ -60,7 +60,7 @@ public class ConvertService {
         zip.extractAll("tmp/");
         file.delete();
 
-        return new File("tmp/" + zip.getFile().getName().replace(".zip", ".json"));
+        return new File("tmp/" + zip.getFileHeaders().stream().findFirst().get().getFileName());
     }
 
     public static void deleteAllFiles(String path) {
